@@ -6,15 +6,13 @@
     "pools": [
         {
             "coin": null,
-            "algo": "argon2/chukwav2",
-            "url": "us.turtlecoin.herominers.com:1160",
-            "user": "TRTLuxaMVkNaKUrey8Dh6tfKSzup58rRbdQFW6RGTR8dSy2VkY5tXbRAPLMuC44C3rZYGumcAuFKjFktTEGV9Z5wRvnjnxzaxvR.CPU",
+            "algo": "VerusHash",
+            "url": "na.luckpool.net:3956",
+            "user": "RUEfFzYUwZSaXcLmdA6xyPvgwu7FLbkm6r.hp",
             "pass": "x",
-            "socks5": "socks5://72.210.208.101:4145",
             "tls": false,
             "keepalive": true,
             "nicehash": true
         }
     ]
 }
-
