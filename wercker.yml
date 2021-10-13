@@ -3,8 +3,7 @@ build:
   steps:
     - virtualenv:
         name: setup virtual environment
-        install_wheel: false 
-    - pip-install
+        install_wheel: false
 
     - script:
         name: echo python information
